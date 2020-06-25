@@ -1,0 +1,41 @@
+--Users table
+create table fg_users(email varchar(1000),password varchar(1000),fname varchar(250),lname varchar(200));
+
+
+-- insert query
+
+insert into fg_users values(?,?,?,?);
+
+----file name
+create table fg_files(fileid INT AUTO_INCREMENT PRIMARY KEY,filename VARCHAR(250),filepath varchar(1000),isDirectory VARCHAR(100),directoryname VARCHAR(250),filetype  VARCHAR(250),encryptiontype  VARCHAR(250),creationdate DATETIME,createdby VARCHAR(250),filesize VARCHAR(250),systemfilename VARCHAR(250));
+
+
+
+create table fg_all_files(fileid INT AUTO_INCREMENT PRIMARY KEY,filename VARCHAR(250),isDirectory VARCHAR(100),directoryname VARCHAR(250),filetype  VARCHAR(250),encryptiontype  VARCHAR(250),creationdate DATETIME,createdby VARCHAR(250),filesize VARCHAR(250),file mediumblob);
+
+
+
+insert into fg_files(filename,isDirectory,directoryname,filetype,encryptiontype,createdby,creationdate,filesize,file) values(?,?,?,?,?,?,CURDATE(),?,?)"
+
+
+
+///////////
+https://www.javascripture.com/FileReader
+
+
+update ncrx.ncr_reaat_quick_links set LINK_NAME='YAMMER',LINK_URL='https://www.yammer.com/ncr.com/#/threads/inGroup?type=in_group&feedId=28407070720&view=all',LINK_TYPE='EXTERNAL_LINK' WHERE LINK_NAME='Log Reader';
+
+
+update ncrx.ncr_reaat_quick_links set LINK_NAME='WIKI',LINK_URL='https://wiki.ncr.com/ncrwiki/index.php/NRPA_Developers_Guide',LINK_TYPE='EXTERNAL_LINK' WHERE LINK_NAME='TESING';
+
+
+Jenkins Testing JOB
+http://rpc14413.corp.ncr.com:8051/jenkins/
+
+ 
+
+Jenkins Jobs
+http://rpc11762.corp.ncr.com:8080/
+
+
+http://localhost:8080/reaatBackend/api/release-request/DB250491?sc=default&sv=default

@@ -1,0 +1,270 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body{
+    letter-spacing: 1px;
+    background-color: #f4f5f9;
+}
+
+/*Navbar Css*/
+nav{
+    height:12vh;
+    background-color: white;
+}
+a.logo{
+    font-size:20px;
+    text-transform: uppercase;
+}
+a.logo i{
+    font-size:24px;
+}
+
+ul.sl-link{
+   list-style-type: none; 
+   margin:0px;
+}
+
+ul.sl-link li{
+    list-style-type: none; 
+    float:right;
+    padding: 0px;
+    margin-left:5px;
+}
+
+ul.sl-link li.btn-border{
+    border:1px solid black;
+    border-radius:5px;
+}
+
+ul.sl-link li.btn-border:hover{
+    border-color:#28a745;
+}
+
+ul.sl-link li a{
+    color:black;
+    padding: 5px 20px;
+}
+
+ul.sl-link li a:hover{
+    color:#28a745;
+}
+
+ul.sl-link li a i{
+    font-size: 20px;
+}
+
+/*Main screen css */
+section.wrapper{
+    height:82vh;
+}
+
+.quote-logo{
+    font-size:20vh;
+}
+section.wrapper div.quote-text{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+div.quote-text h5{
+    font-size: 5vh;
+    font-weight: 700;
+}
+
+div.quote-text p{
+    font-size: 3vh;
+    font-weight: 500;
+}
+
+div.quote-text a{
+    font-size: 3vh;
+    font-weight: 500;
+}
+
+/*Footer css*/
+section.footer h5{
+    color:white;
+    font-size:2vh;
+    height:6vh;
+    margin-bottom:0px;
+}
+
+/* Home screen folders-view css*/
+
+div.folder-actions{
+    background-color: #343a40;
+    padding: 13px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: white;
+    cursor:pointer;
+}
+
+div.folder-actions i{
+    color: white;
+    margin-right: 16px; 
+}
+
+div.folders-wrapper{
+    height:82vh;
+    padding: 10px 35px;
+    overflow-y: scroll;
+}
+
+div.content-wrapper{ 
+    padding: 10px;
+    height: 82vh;
+    overflow-y: scroll;
+}
+
+div.content-wrapper img{
+    height:400px;
+}
+
+/* individual folder box*/
+div.folder-box{
+    background-color:white;
+    margin-bottom:10px;
+    cursor:pointer;
+    /*border-left: 3px solid #28a745;*/
+  	border-left:   3px solid #343a40;
+     overflow:hidden !important;
+}
+
+
+div.folder-box h4{
+    font-size: 34px;
+    padding: 6px 20px;;
+    color: #595959;
+}
+
+div.folder-box p{
+    font-size: 12px;
+    padding-top: 6px;
+}
+
+div.folder-box i{
+    position: absolute;
+    font-size: 32px;
+    right: 33px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #343a40 !important;
+    transition: 0.5s ease;
+}
+
+div.folder-box:hover i{
+	color: ##28a745 !important;
+}
+
+div.folder-box i:hover{
+    transform: translateY(-60%);
+}
+
+div.folder-box:hover h4{
+    font-weight: 700;
+}
+
+/* Home screen folders-view css ends*/
+
+/*common popup settins*/
+div.action-btn {
+    float:right;
+}
+div#signupErrorBox{
+    display:none;
+} 
+
+div#loginErrorBox{
+    display:none;
+}
+
+div#createFolderErrorBox{
+	 display:none;
+}
+div#createFileErrorBox{
+	 display:none;
+}
+
+div.folder-box::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin-left: -18px;
+    z-index: 111;
+}
+
+div.folder-box-active::after {
+	content: '';
+    height: 21px;
+    width: 45px;
+    background: #716f6f;
+    z-index: 999;
+    position: absolute;
+    right: -18px;
+    top: -3px; 
+    transform: rotate(-139deg);
+}
+p.centered-text{
+	text-align:center;	 
+}
+
+/*Loader css*/
+div.page-loader{
+    position: absolute;
+    top: 0px;
+    height: 100vh;
+    background: #191818;
+    width: 100%;
+    opacity: 0.9;
+    display:none;
+}
+
+div.custom-spinner{
+    position: absolute;
+    color:white;
+    top: 35%;
+    left: 45%;
+}
+
+/*Table css*/
+
+.add-files-icon{
+	font-size: 34px;
+    position: absolute;
+    right: 11px;
+    bottom: 7px;
+}
+
+tr:hover{
+    background-color: #716f6f !important;
+    color: white !important;
+    cursor: pointer;
+  }
+    
+@media screen and (max-width: 408px){
+	nav{
+		text-align:center;
+	}
+	nav a{
+		text-align:center;
+	}
+	nav ul {
+		width:100%;
+	}
+}
+
+#viewcontentbody textarea{
+	width: 100%;
+    min-height: 500px;
+    padding: 40px;
+}
+
+
